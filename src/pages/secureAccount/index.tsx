@@ -69,14 +69,14 @@ const SecureAccount = () => {
                                         <div className="form-field">
                                              <label className="fieldlable" htmlFor="verification">Password</label>
                                              <Input 
-                                                  type="text"
+                                                  type="password"
                                                   className="form-control"
                                              />
                                         </div>
                                         <div className="form-field">
                                              <label className="fieldlable" htmlFor="verification">Confirm Password</label>
                                              <Input
-                                                  type="text"
+                                                  type="password"
                                                   placeholder=""
                                                   className="form-control"
                                              />
