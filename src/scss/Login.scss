@@ -1,0 +1,184 @@
+.page-wrapper {
+  .page-header {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    background-color: $Background1;
+    box-shadow: none;
+    border-bottom: 1px solid $Border-color;
+    position: relative;
+    height: 71px;
+    .close-verification {
+      position: absolute;
+      top: 23px;
+      right: 15px;
+    }
+    .account-progress {
+      position: absolute;
+      bottom: -3px;
+      left: 0px;
+      width: 35%;
+      height: 3px;
+      background-color: $Theme-Primary;
+      &.thirdpro {
+        width: 75%;
+      }
+    }
+  }
+}
+.middle-content {
+  padding: 25px;
+  &.secure-account {
+    padding-bottom: 5px;
+    & + .terms-policy-content {
+      border-bottom: none !important;
+    }
+  }
+  .MuiBox-root {
+    border: none !important;
+    padding: 0px !important;
+  }
+  .loginTabs {
+    margin-bottom: 15px;
+    .MuiTab-root {
+      color: $Heading;
+      text-transform: capitalize;
+      @include FontMedium;
+      min-width: 66px !important;
+      min-height: 30px !important;
+      padding: 6px 12px !important;
+      box-sizing: border-box;
+      &.Mui-selected {
+        color: $HeadingActive;
+      }
+    }
+    .MuiTabs-indicator {
+      background-color: transparent;
+      border: 1px solid $Active-Border;
+      border-radius: 10px;
+      height: 30px;
+      bottom: 17px;
+    }
+  }
+}
+.terms-policy-content {
+  margin: 0px 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $Border-color;
+  p {
+    display: flex;
+    flex-direction: column;
+    @include FontSmall;
+    text-align: center;
+    color: $Heading;
+  }
+}
+.bottompage-links {
+  padding: 25px;
+  text-align: center;
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .loginWith-button {
+    width: 186px;
+    height: 40px;
+  }
+  .bLink {
+    margin-top: 20px;
+    @include FontMedium;
+    display: block;
+  }
+  &.verifyBy-email {
+    .MuiTypography-root {
+      margin-top: 15px;
+    }
+  }
+  &.verification-links {
+    padding-top: 0px;
+  }
+  &.createAccount-content {
+    text-align: left;
+    padding-bottom: 0px;
+    p {
+      @include FontMedium;
+      color: $LabelColor;
+    }
+  }
+}
+.main-content {
+  @media screen and (min-width: 767px) {
+    width: 40%;
+    margin: auto;
+  }
+}
+.seed-phrase {
+  text-align: center;
+  h2 {
+    text-align: center;
+    color: $Heading2;
+  }
+  .seed-card-box {
+    background: $FormField-background;
+    border: 1px solid $Border-color;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      margin-right: 5px;
+      background: $FormField-background;
+      border: 1px solid $LightButton;
+      border-radius: 10px;
+      list-style-type: none;
+      padding: 3px;
+      padding-right: 10px !important;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      @include FontMedium;
+      color: $Heading;
+      margin-bottom: 10px;
+      span {
+        background: $Heading;
+        border-radius: 8px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        color: $Theme-white;
+      }
+    }
+  }
+  .copy-seed {
+    margin-top: 30px;
+    @include buttonTranpsarent;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    color: $Theme-Primary;
+    @include LargeButtonFont;
+    img {
+      margin-right: 5px;
+    }
+  }
+  .continue-button {
+    background-color: $Theme-Primary;
+    box-shadow: none;
+    text-transform: capitalize;
+    border-radius: 10px;
+    height: 40px;
+    color: $Theme-white;
+    @include LargeButtonFont;
+    margin-top: 30px;
+  }
+}
